@@ -1,0 +1,27 @@
+.author{
+    margin-top: 10px;
+    background-color: gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.author-info{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-wrap: nowrap;
+    flex: 1;
+}
+.author-info span{
+    font-weight: bolder;
+}
+.author-profile{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.author-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}

@@ -1,0 +1,12 @@
+.task-item{
+    border: 1px solid black;
+    width: 20%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+}
+.task-item > h3{
+    text-align: center;
+    text-decoration: underline;
+}
