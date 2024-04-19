@@ -21,4 +21,8 @@ export class AuthorsComponent implements OnInit {
   ngOnInit(): void {
       this.authorsdataService.getAuthors().subscribe((authors) => this.authors = authors );
   }
+
+  deleteAuthor(){
+    console.log('deleted')
+  }
 }
