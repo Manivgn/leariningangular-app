@@ -1,4 +1,6 @@
 .author{
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: gainsboro;
     display: flex;
     justify-content: center;
