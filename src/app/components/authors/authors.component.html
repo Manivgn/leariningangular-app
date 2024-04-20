@@ -1,4 +1,10 @@
 <div class="authors">
-    <app-author-item *ngFor="let author of authors" [author]="author" (iconClick)="deleteAuthor()">
-    </app-author-item>
+    <h3>Authors Repository</h3>
+    <div class="add-author">
+        <app-add-author></app-add-author>
+    </div>
+    <div class="list-authors">
+        <app-author-item *ngFor="let author of authors" [author]="author" (iconClick)="deleteAuthor()"></app-author-item> 
+    </div>
+    
 </div>

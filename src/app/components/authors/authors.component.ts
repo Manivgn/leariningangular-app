@@ -3,10 +3,11 @@ import {AuthorsDataService} from '../../services/authors-data.service'
 import {Author} from '../../Author';
 import { AuthorItemComponent } from '../author-item/author-item.component';
 import { NgForOf } from '@angular/common';
+import { AddAuthorComponent } from '../add-author/add-author.component';
 @Component({
   selector: 'app-authors',
   standalone: true,
-  imports: [AuthorItemComponent,NgForOf],
+  imports: [AuthorItemComponent,AddAuthorComponent,NgForOf],
   templateUrl: './authors.component.html',
   styleUrl: './authors.component.css'
 })

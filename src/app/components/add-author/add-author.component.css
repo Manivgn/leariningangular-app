@@ -1,0 +1,12 @@
+.add-author-form{
+    display: flex;
+    flex-direction: column;
+}
+.author-fields{
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.author-fields label{
+    padding-right: 10px;
+}
