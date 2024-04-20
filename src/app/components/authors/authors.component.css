@@ -7,7 +7,11 @@
     flex-direction: column;
     align-items: center;
 }
+.add-author{
+    margin-bottom: 30px;
+}
 .list-authors{
     width: 80%;
     border: 1px solid;
+    margin-bottom: 30px;
 }
