@@ -1,12 +1,30 @@
 .add-author-form{
-    display: flex;
-    flex-direction: column;
+    background-color: aliceblue;
+    padding-bottom: 15px;
 }
 .author-fields{
     padding: 10px 10px 10px 10px;
     display: flex;
-    justify-content: space-between;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.author-fields input {
+    margin-left: 30px;
+    margin-right: 40px;
 }
 .author-fields label{
-    padding-right: 10px;
+    text-transform: capitalize;
+}
+.add-btn{
+    background-color: rgb(46, 42, 42);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    padding: 4px 20px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }

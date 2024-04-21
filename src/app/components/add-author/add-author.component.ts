@@ -16,7 +16,7 @@ export class AddAuthorComponent {
   
 
   onSubmit(){
-
+    console.log('submit')
   }
 
 }

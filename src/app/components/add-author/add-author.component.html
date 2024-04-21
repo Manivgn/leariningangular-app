@@ -1,18 +1,19 @@
 <form class="add-author-form" (ngSubmit)="onSubmit()">
     <div class="author-fields">
         <label for="fullName">fullName</label>
-        <input type="text" name="fullName" [(ngModel)]="fullName" id="fullName" placeholder="Type in a fullName">
+        <input type="text" name="fullName" [(ngModel)]="fullName" id="fullName" placeholder="Type in a fullName" autocomplete="off">
     </div>
     <div class="author-fields">
         <label for="year_Born">year_Born</label>
-        <input type="text" name="year_Born" [(ngModel)]="year_Born" id="year_Born" placeholder="Type in a year Born">
+        <input type="text" name="year_Born" [(ngModel)]="year_Born" id="year_Born" placeholder="Type in a year Born" autocomplete="off">
     </div>
     <div class="author-fields">
         <label for="technology">technology</label>
-        <input type="text" name="technology" [(ngModel)]="technology" id="technology" placeholder="Type in a technology">
+        <input type="text" name="technology" [(ngModel)]="technology" id="technology" placeholder="Type in a technology" autocomplete="off">
     </div>
     <div class="author-fields">
         <label for="profile">profile</label>
-        <input type="text" name="profile" [(ngModel)]="profile" id="profile" placeholder="Type in a profile">
+        <input type="text" name="profile" [(ngModel)]="profile" id="profile" placeholder="Type in a profile" autocomplete="off">
     </div>
+    <button class="add-btn" type="submit" >Save Author</button>
 </form>

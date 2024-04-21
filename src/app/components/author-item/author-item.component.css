@@ -1,6 +1,5 @@
 .author{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     background-color: gainsboro;
     display: flex;
     justify-content: center;
@@ -24,6 +23,7 @@
 }
 .author-info fa-icon{
     color: red;
+    cursor: pointer;
 }
 .author-profile{
     margin-left: auto;
