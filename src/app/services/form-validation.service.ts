@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Type } from '@angular/core';
+import { Author } from '../models/Author';
 
 @Injectable({
   providedIn: 'root'
@@ -6,4 +7,5 @@ import { Injectable } from '@angular/core';
 export class FormValidationService {
 
   constructor() { }
+
 }

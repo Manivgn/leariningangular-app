@@ -1,5 +1,5 @@
 import { Component, Input,Output,EventEmitter } from '@angular/core';
-import { Author } from '../../Author';
+import { Author } from '../../models/Author';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
