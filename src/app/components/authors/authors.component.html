@@ -4,6 +4,6 @@
         <app-add-author (onSaveAuthor)="addAuthor($event)"></app-add-author>
     </div>
     <div class="list-authors">
-        <app-author-item *ngFor="let author of authors" [author]="author" (onDeleteAuthor)="deleteAuthor()"></app-author-item> 
+        <app-author-item *ngFor="let author of authors" [author]="author" (onDeleteAuthor)="deleteAuthor($event)"></app-author-item> 
     </div>
 </div>

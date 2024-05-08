@@ -19,8 +19,11 @@ export class AuthorsComponent implements OnInit {
       this.authorsdataService.getAuthors().subscribe((authors) => this.authors = authors );
   }
 
-  deleteAuthor(){
+  deleteAuthor(author : Author){
     console.log('deleting...');
+    this.authorsdataService.deleteAuthor(author).subscribe(() => {
+      console.log('deleted !') ;
+    });
   }
   addAuthor(authortmp: [string, number , string, string]){
     console.log('adding...');
