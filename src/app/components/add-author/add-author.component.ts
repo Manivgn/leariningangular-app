@@ -10,14 +10,19 @@ import { Author } from '../../models/Author';
   styleUrl: './add-author.component.css'
 })
 export class AddAuthorComponent {
-  @Output() onSaveAuthor : EventEmitter<Author> = new EventEmitter();
-  fullName : string = '';
-  year_Born : number | undefined ; 
-  technology : string = ''; 
-  profile : string = ''; 
+  @Output() onSaveAuthor : EventEmitter<[string, number , string, string]> = new EventEmitter();
+  fullName! : string ;
+  year_Born! : number; 
+  technology! : string ; 
+  profile! : string ; 
+  @Output() authortmp!: [string, number , string, string] ;
   
   onSubmit(){
-    this.onSaveAuthor.emit();
+    this.authortmp = [this.fullName, this.year_Born, this.technology, this.profile] ;
+    this.onSaveAuthor.emit(this.authortmp);
+    this.fullName ='';
+    this.technology ='';
+    this.profile = '';
   }
 
 }

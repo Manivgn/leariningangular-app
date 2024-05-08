@@ -14,10 +14,10 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 export class AuthorItemComponent {
   faTimes = faTrash ;
   @Input() author : Author | undefined ;
-  @Output() iconClick : EventEmitter<Author> = new EventEmitter();
+  @Output() onDeleteAuthor : EventEmitter<Author> = new EventEmitter();
 
   onClick(author: Author | undefined){
-    this.iconClick.emit(author);
+    this.onDeleteAuthor.emit(author);
   }
 
 }

@@ -14,5 +14,13 @@ export class AuthorsDataService {
     return this.http.get<Author[]>(this.apiUrl);
   }
 
+  deleteAuthor() : string {
+    return "" ;
+  }
+
+  addAuthor(fullName : string, year_Born : number, technology : string, profile : string) : Observable<Author>{
+    return this.http.post<Author>(this.apiUrl, {fullName, year_Born, technology, profile}) ;
+  }
+
   
 }

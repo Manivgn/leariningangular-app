@@ -20,6 +20,14 @@ export class AuthorsComponent implements OnInit {
   }
 
   deleteAuthor(){
-    console.log('deleted')
+    console.log('deleting...');
+  }
+  addAuthor(authortmp: [string, number , string, string]){
+    console.log('adding...');
+    this.authorsdataService.addAuthor(authortmp[0],authortmp[1], authortmp[2], authortmp[3]).subscribe((author) => {
+      console.log(author);
+      this.ngOnInit();
+    });
+  
   }
 }
