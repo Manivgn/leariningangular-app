@@ -1,7 +1,7 @@
 <div class="authors">
     <h3 style="text-transform: uppercase;">Authors Repository</h3>
     <div class="add-author" >
-        <app-add-author (onSaveAuthor)="addAuthor($event)"></app-add-author>
+        <app-add-author ></app-add-author>
     </div>
     <div class="list-authors">
         <app-author-item *ngFor="let author of authors" [author]="author" (onDeleteAuthor)="deleteAuthor($event)"></app-author-item> 
